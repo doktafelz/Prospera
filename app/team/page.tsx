@@ -77,6 +77,20 @@ export default function TeamPage() {
         "Expertise in Corporate Governance & Compliance",
       ],
     },
+    {
+      name: "Babajide Olukoshi",
+      title: "Head, Corporate Finance and Partnerships",
+      department: "Finance",
+      email: "Babajide.olukoshi@prosperagroup.co",
+      image: "/babajide.jpeg",
+      bio: "Mr. Olukoshi Babajide is a results-driven executive with over ten years of experience in financial services, known for building successful businesses across construction, banking, fintech, and fashion.",
+      detailedBio:
+        "As Head, Corporate Finance and Partnerships at Prospera Finance Ltd., he leads capital structuring, investment analysis, deal execution, and strategic partnerships. He combines financial expertise with commercial insight to drive high-performance outcomes. Previously, he served as CBB Value Chain Regional Manager at Sterling, where he excelled in business development and strategic planning. Widely recognised for his resilience, risk management discipline, and problem-solving abilities, Mr. Babajide is passionate about building efficient systems and fostering a culture of accountability. He continues to play a key role in strengthening Prospera Finance Ltd.’s capital base and partnership ecosystem, positioning the company for sustained success.",
+      credentials: [
+        "BSc, Covenant University, Ota",
+        "MBA in view",
+      ],
+    },
   ]
 
 
