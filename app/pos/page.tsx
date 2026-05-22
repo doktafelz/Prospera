@@ -189,7 +189,7 @@ export default function POSPage() {
                             <Animate delay="150">
                                 <div className="overflow-hidden rounded-[2rem] border border-border bg-white/80 p-4 md:p-6 shadow-xl shadow-primary/10 backdrop-blur-xl dark:bg-card">
                                     <Image
-                                        src="/pos1.PNG"
+                                        src="/pos4.jpeg"
                                         alt="Prospera POS hero"
                                         width={720}
                                         height={560}
