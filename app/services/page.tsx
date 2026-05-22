@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
-import { Briefcase, CreditCard, Car, FileText, User, TrendingUp, CheckCircle } from "lucide-react"
+import { Briefcase, CreditCard, Car, FileText, User, TrendingUp, CheckCircle, CreditCardIcon, Store } from "lucide-react"
 import Image from "next/image"
 
 import type { Metadata } from "next"
@@ -144,7 +144,28 @@ export default function ServicesPage() {
         "Expert guidance to match your financial goals",
       ],
     },
+    {
+      icon: Store,
+      title: "POS Services",
+      subtitle: "For Agents, Merchants, and SMEs",
+      description:
+        "At Prospera Finance, our POS Services are designed to support agents, merchants, and businesses with secure, convenient, and reliable payment solutions.Whether you run a retail shop, service business, or agent banking outlet, our POS terminals help you serve customers better and process transactions with ease.",
+      idealFor: [
+        "POS agents and merchant operators",
+        "Retail shops, supermarkets, and pharmacies",
+        "SMEs handling daily customer payments",
+        "Businesses looking to expand payment options",
+      ],
+      whyItWorks: [
+        "Reliable payment and withdrawal processing",
+        "Convenient support for everyday transactions",
+        "Suitable for both agents and business owners",
+        "Helps improve customer service and business efficiency"
+      ],
+    },
   ]
+
+
 
   return (
     <div className="flex min-h-screen flex-col">

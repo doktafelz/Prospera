@@ -39,19 +39,6 @@ export default function TeamPage() {
       ],
     },
     {
-      name: "Oluwatobi Adewara",
-      title: "Head, Alliance and Investment",
-      image: "/Oluwatobi.jpg",
-      bio: "Oluwatobi Adewara is a seasoned professional with more than six years of experience spanning the banking, learning and development, and transport and logistics industries.",
-      detailedBio:
-        "At Prospera Finance, he leads the Alliance and Investment division, driving strategic partnerships, investment management, and business growth initiatives. His expertise covers sales and business development, balance sheet management, and relationship management within both retail and SME banking environments. Oluwatobi holds a Bachelor's degree in Economics Education from the University of Ilorin and is an alumnus of the GTBank Banking Academy. He is recognized for his disciplined work ethic, analytical mindset, and commitment to sustainable financial growth.",
-      credentials: [
-        "BSc Economics Education - University of Ilorin",
-        "GTBank Banking Academy Alumni",
-        "6+ Years Banking Experience",
-      ],
-    },
-    {
       name: "Johnson Adesanmi",
       title: "Chief Technology Officer (CTO)",
       image: "/johnson.jpg",
