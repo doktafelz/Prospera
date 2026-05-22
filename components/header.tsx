@@ -14,11 +14,11 @@ export function Header() {
 
   const navLinks = [
     { href: "/services", label: "Services" },
+    { href: "/pos", label: "Prospera POS" },
     { href: "/about", label: "About Us" },
     { href: "/board-of-directors", label: "Directors" },
     { href: "/how-it-works", label: "How It Works" },
     { href: "/team", label: "Leadership Team" },
-    { href: "/testimonials", label: "Testimonials" },
     { href: "/contact", label: "Contact Us" },
   ]
 
@@ -29,7 +29,7 @@ export function Header() {
     return pathname.startsWith(href)
   }
 
-// 
+  // 
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">

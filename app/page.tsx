@@ -134,6 +134,12 @@ export default function HomePage() {
       description: "Acquire vehicles, land, or equipment with flexible payment plans.",
     },
     {
+      icon: CreditCard,
+      title: "Prospera POS",
+      description: "Turn your shop into a daily earning point with secure POS services backed by Providus Bank.",
+      href: "/pos",
+    },
+    {
       icon: FileText,
       title: "LPO Loans",
       description: "Contract financing to help contractors fulfil purchase orders",
@@ -263,10 +269,19 @@ export default function HomePage() {
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {services.map((service, index) => (
                 <Card key={index} className="transition-shadow hover:shadow-lg">
-                  <CardContent className="p-6">
-                    <service.icon className="h-10 w-10 text-primary mb-4" />
-                    <h3 className="text-lg font-bold mb-2">{service.title}</h3>
-                    <p className="text-base text-muted-foreground leading-relaxed">{service.description}</p>
+                  <CardContent className="p-6 flex h-full flex-col justify-between">
+                    <div>
+                      <service.icon className="h-10 w-10 text-primary mb-4" />
+                      <h3 className="text-lg font-bold mb-2">{service.title}</h3>
+                      <p className="text-base text-muted-foreground leading-relaxed">{service.description}</p>
+                    </div>
+                    {service.href ? (
+                      <div className="mt-6">
+                        <Button size="sm" asChild className="h-11">
+                          <Link href={service.href}>Learn More</Link>
+                        </Button>
+                      </div>
+                    ) : null}
                   </CardContent>
                 </Card>
               ))}
@@ -281,6 +296,42 @@ export default function HomePage() {
                 </Button>
               </div>
             </Animate>
+          </div>
+        </section>
+
+        {/* POS Promotion Banner */}
+        <section className="py-10 md:py-14 lg:py-16">
+          <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="">
+              <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+                <div className="space-y-5">
+                  <div className="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">
+                    New service
+                  </div>
+                  <h2 className="text-2xl font-bold text-balance sm:text-3xl md:text-4xl">
+                    Prospera POS — turn your location into a daily earning point
+                  </h2>
+                  <p className="text-base text-muted-foreground leading-relaxed md:text-lg">
+                    Give your customers fast access to withdrawals, transfers, bill payments, and agent services with a secure POS terminal powered by Providus Bank.
+                  </p>
+                  <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+                    <Button size="lg" asChild className="h-12 text-base">
+                      <Link href="/pos">Explore Prospera POS</Link>
+                    </Button>
+                    <Button size="lg" variant="outline" asChild className="h-12 text-base bg-transparent">
+                      <Link href="/contact">Talk to Sales</Link>
+                    </Button>
+                  </div>
+                </div>
+                <div className="overflow-hidden rounded-3xl bg-muted/5">
+                  <img
+                    src="/first-banner.png"
+                    alt="Prospera POS promotion"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 

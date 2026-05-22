@@ -233,6 +233,7 @@ export default function ContactPageClient() {
                                                 <SelectContent>
                                                     <SelectItem value="Loans">Loans</SelectItem>
                                                     <SelectItem value="Investments">Investments</SelectItem>
+                                                    <SelectItem value="POS Request">POS Request</SelectItem>
                                                     <SelectItem value="Partnership">Partnership</SelectItem>
                                                     <SelectItem value="General">General Enquiry</SelectItem>
                                                 </SelectContent>
